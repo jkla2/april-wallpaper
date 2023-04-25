@@ -4,10 +4,11 @@
 name: Java CI with Maven
 permissions:
   contents: write
+
 on:
-  schedule:
-    # * is a special character in YAML, so you have to quote this string
-    - cron:  '5 * * * *'
+  push:
+    branches:
+      - main
 
 jobs:
   build:
