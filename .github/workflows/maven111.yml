@@ -7,7 +7,7 @@ permissions:
 on:
   schedule:
     # * is a special character in YAML, so you have to quote this string
-    - cron:  '* * * * *'
+    - cron:  '5 * * * *'
 
 jobs:
   build:
